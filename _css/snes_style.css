@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media screen and (-webkit-min-device-pixel-ratio:0),(min--moz-device-pixel-ratio: 0),(min-resolution: 1dppx) { .h1_c { 
+	font-size: 28px;
+    font-weight: bold;
+    Margin-bottom: 18px;
+	font-family: 'Oswald', Helvetica, Arial, serif !important; } }
+
+@media screen and (-webkit-min-device-pixel-ratio:0),(min--moz-device-pixel-ratio: 0),(min-resolution: 1dppx) { .h2_c { 
+	font-size: 24px;
+    Margin-bottom: 18px;
+	font-family: 'Oswald', Helvetica, Arial, serif !important; } }
+
+	@media screen and (-webkit-min-device-pixel-ratio:0),(min--moz-device-pixel-ratio: 0),(min-resolution: 1dppx)  { .texte { 
+	font-size: 12px;
+    Margin-bottom: 18px;
+	font-family: Roboto Condensed, Helvetica, Arial, serif !important;} }
+	
+@media screen and (max-width: 400px) {
+.two-column .column,
+    .three-column .column {
+        max-width: 100% !important;
+    }
+    .two-column img {
+        max-width: 100% !important;
+    }
+    .three-column img {
+        max-width: 50% !important;
+    }
+}
+
+
+
+@media screen and (min-width: 401px) and (max-width: 620px) {
+.three-column .column {
+        max-width: 33% !important;
+    }
+    .two-column .column {
+        max-width: 50% !important;
+    }
+}
