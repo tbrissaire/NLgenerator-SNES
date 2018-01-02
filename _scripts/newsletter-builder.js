@@ -232,6 +232,7 @@ perform_delete();
     $("#newsletter-preloaded-export .sim-row").wrap('<tr></tr>');
 	$("#newsletter-preloaded-export .sim-row-headsnes0").wrap('<td class="one-column" style="padding: 0;"></td>'); 
 	$("#newsletter-preloaded-export .sim-row-headsnes1").wrap('<td class="one-column" style="padding: 0;"></td>');  
+	$("#newsletter-preloaded-export .sim-row-headsnes1_1").wrap('<td class="left-sidebar" style="padding: 0; background-color: #ffffff; text-align: center;"></td>'); 
 	$("#newsletter-preloaded-export .sim-row-headsnes2").wrap('<td class="left-sidebar" style="text-align: center; background-color: #FAD3D3;border-radius: 15px 50px;padding: 2px 10px 10px 10px"></td>'); 
 	$("#newsletter-preloaded-export .sim-row-headsnes3").wrap('<td class="left-sidebar" style="text-align: center; background-color: #FAE7E7;border-radius: 15px 50px;padding: 2px 10px 10px 10px"></td>');
 	$("#newsletter-preloaded-export .sim-row-headsnes4").wrap('<td class="left-sidebar" style="text-align: center; background-color: #FAF3F3;border-radius: 15px 50px;padding: 2px 10px 10px 10px"></td>');
