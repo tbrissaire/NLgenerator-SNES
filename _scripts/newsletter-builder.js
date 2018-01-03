@@ -72,11 +72,11 @@ function hover_edit(){
 
 $(".sim-row-edit").hover(
   function() {
-    $(this).append('<div class="sim-row-edit-hover"><i class="fa fa-pencil" style="line-height:30px;"></i></div>');
-	$(".sim-row-edit-hover").click(function(e) {e.preventDefault()})
-	$(".sim-row-edit-hover i").click(function(e) {
-	e.preventDefault();
-	big_parent = $(this).parent().parent();
+   $(this).append('<div class="sim-row-edit-hover"><i class="fa fa-pencil" style="line-height:30px;"></i></div>');
+   $(".sim-row-edit-hover").click(function(e) {e.preventDefault()})
+   $(".sim-row-edit-hover i").click(function(e) {
+   e.preventDefault();
+   big_parent = $(this).parent().parent();
 	
 	//edit image
 	if(big_parent.attr("data-type")=='image'){
@@ -110,6 +110,23 @@ $(".sim-row-edit").hover(
 	   
 	    big_parent.text($("#sim-edit-link .title").val());
 		big_parent.attr("href",$("#sim-edit-link .url").val());
+
+		});
+
+	}
+		
+		//edit link sur img
+	if(big_parent.attr("data-type")=='linkimg'){
+	
+	$("#sim-edit-linkimg .url").val(big_parent.attr("href"));
+	$("#sim-edit-linkimg").fadeIn(500);
+	$("#sim-edit-linkimg .sim-edit-box").slideDown(500);
+	
+	$("#sim-edit-linkimg .sim-edit-box-buttons-save").click(function() {
+	  $(this).parent().parent().parent().fadeOut(500)
+	  $(this).parent().parent().slideUp(500)
+	   
+		big_parent.attr("href",$("#sim-edit-linkimg .url").val());
 
 		});
 
@@ -233,13 +250,13 @@ perform_delete();
 	$("#newsletter-preloaded-export .sim-row-headsnes0").wrap('<td class="one-column" style="padding: 0;"></td>'); 
 	$("#newsletter-preloaded-export .sim-row-headsnes1").wrap('<td class="one-column" style="padding: 0;"></td>');  
 	$("#newsletter-preloaded-export .sim-row-headsnes1_1").wrap('<td class="left-sidebar" style="padding: 0; background-color: #ffffff; text-align: center;"></td>'); 
-	$("#newsletter-preloaded-export .sim-row-headsnes2").wrap('<td class="left-sidebar" style="text-align: center; background-color: #FAD3D3;border-radius: 15px 50px;padding: 2px 10px 10px 10px"></td>'); 
-	$("#newsletter-preloaded-export .sim-row-headsnes3").wrap('<td class="left-sidebar" style="text-align: center; background-color: #FAE7E7;border-radius: 15px 50px;padding: 2px 10px 10px 10px"></td>');
-	$("#newsletter-preloaded-export .sim-row-headsnes4").wrap('<td class="left-sidebar" style="text-align: center; background-color: #FAF3F3;border-radius: 15px 50px;padding: 2px 10px 10px 10px"></td>');
+	$("#newsletter-preloaded-export .sim-row-headsnes2").wrap('<td class="left-sidebar" style="text-align: center; background-color: #D0B7FF;border-radius: 15px 50px;padding: 2px 10px 10px 10px"></td>'); 
+	$("#newsletter-preloaded-export .sim-row-headsnes3").wrap('<td class="left-sidebar" style="text-align: center; background-color: #D6C7F1;border-radius: 15px 50px;padding: 2px 10px 10px 10px"></td>');
+	$("#newsletter-preloaded-export .sim-row-headsnes4").wrap('<td class="left-sidebar" style="text-align: center; background-color: #E1D5ED;border-radius: 15px 50px;padding: 2px 10px 10px 10px"></td>');
 	$("#newsletter-preloaded-export .sim-row-headsnes5").wrap('<td class="two-column" style="padding: 0;text-align: center;font-size: 0"></td>');
 	$("#newsletter-preloaded-export .sim-row-headcont5").wrap('<td class="one-column" style="padding: 0;"></td>');  
 	$("#newsletter-preloaded-export .sim-row-foot").wrap('<td class="one-column" style="padding: 0"></td>');
-	 
+	$("#newsletter-preloaded-export .sim-row-foot2").wrap('<td class="left-sidebar" style="padding: 0; background-color: #ffffff; text-align: center; background-color: #E7E9EC"></td>'); 
 	 
 	// $("#newsletter-preloaded-export .sim-row").wrap('<td class="one-column" style="padding: 0; align: center;"></td>'); 
 
