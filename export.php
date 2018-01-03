@@ -25,13 +25,16 @@ echo '<style type="text/css">';
 echo 'table {border-collapse: collapse;}';
 echo '</style>';
 echo '<![endif]-->';
-echo '<style>';
-
+echo '<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic" rel="stylesheet" type="text/css">';
+echo '<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">';
+echo '<link href="http://www.biolyx.fr/NLgenerator/_css/Icomoon/style.css" rel="stylesheet" type="text/css" />';
+	
+echo '<link href="https://www.snes.edu/newsletter/css_lettre.css" rel="stylesheet">';
 //	require_once('_css/newsletter.css');
+echo '<style>';
 require_once('_css/snes_style.css');
 	echo '</style>';
-	echo '<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic" rel="stylesheet" type="text/css"><link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">';
-echo '<link href="https://www.snes.edu/newsletter/css_lettre.css" rel="stylesheet">';
+	
 	echo '</head>';
 	echo '<body style="margin: 0 !important;padding: 0;background-color: #fff">';
         echo '<center class="wrapper" style="width: 100%;table-layout: fixed;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%">';
